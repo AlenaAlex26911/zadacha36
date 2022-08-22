@@ -13,11 +13,11 @@ int sum = 0;
 
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().Next(0,100);
+    array[i] = new Random().Next(0, 100);
 }
 Console.WriteLine($"[{string.Join(", ", array)}]");
 for (int i = 1; i < array.Length; i += 2)
 {
-sum = sum + array[i];
+    sum = sum + array[i];
 }
-Console.WriteLine("Сумма нечетных позиций массива:"+ sum);
+Console.WriteLine("Сумма нечетных позиций массива:" + sum);
